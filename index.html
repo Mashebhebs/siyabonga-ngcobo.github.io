@@ -8,56 +8,103 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Siyabonga Ngcobo</h1>
-    <p>Data Engineer | Computer Science & Mathematics Enthusiast</p>
-    <button id="theme-toggle">Toggle Theme</button>
-</header>
+    <header>
+        <img src="profile.jpeg" alt="Siyabonga Ngcobo Profile Picture" class="profile-img">
+        <h1>Siyabonga Ngcobo</h1>
+        <p>Data Engineer | Software Developer | Aspiring Innovator</p>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>    
 
-<nav>
-    <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am a Data Engineer passionate about data analysis, machine learning, and software engineering. I have a solid foundation in Python, Java, C++, and data processing. I aim to leverage data to solve real-world problems.</p>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Data Engineer and Software Developer passionate about building efficient data pipelines, impactful data visualizations, and software solutions. I have expertise in Python, Java, C++, and more. I strive to combine creativity and technology to solve real-world problems.</p>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li><a href="https://github.com/Mashebhebs">GitHub Profile</a></li>
-        <li><a href="https://www.linkedin.com/in/siyabonga-ngcobo-90a518257/">LinkedIn Profile</a></li>
-        <li><a href="https://github.com/Mashebhebs/siyabonga-ngcobo.github.io/raw/main/Siyabonga_Ngcobo_CV.docx.pdf" target="_blank" download="Siyabonga_Ngcobo_CV">Download CV</a></li>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="logos/python.png" alt="Python Logo">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="logos/java.png" alt="Java Logo">
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="logos/cpp.png" alt="C++ Logo">
+                <p>C++</p>
+            </div>
+            <div class="skill">
+                <img src="logos/javascript.png" alt="JavaScript Logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="logos/html.png" alt="HTML Logo">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="logos/css.png" alt="CSS Logo">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="logos/docker.png" alt="Docker Logo">
+                <p>Docker</p>
+            </div>
+            <div class="skill">
+                <img src="logos/git.png" alt="Git Logo">
+                <p>Git</p>
+            </div>
+            <div class="skill">
+                <img src="logos/sql.png" alt="SQL Logo">
+                <p>SQL</p>
+            </div>
+            <div class="skill">
+                <img src="logos/postgresql.png" alt="PostgreSQL Logo">
+                <p>PostgreSQL</p>
+            </div>
+        </div>
+    </section>
 
-    </ul>
-</section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/Mashebhebs">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/siyabonga-ngcobo-90a518257/">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/Mashebhebs/siyabonga-ngcobo.github.io/raw/main/Siyabonga_Ngcobo_CV.docx.pdf" target="_blank" download="Siyabonga_Ngcobo_CV">Download CV</a></li>
+        </ul>
+    </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xyzzbjyp" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <footer>
+        <p>&copy; 2024 Siyabonga Ngcobo</p>
+    </footer>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
-    <p id="form-message"></p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Siyabonga Ngcobo</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
