@@ -9,11 +9,12 @@
 </head>
 <body>
     <header>
-        <img src="profile.jpeg" alt="Siyabonga Ngcobo Profile Picture" class="profile-img">
+        <img src="profile.WebP" alt="Siyabonga Ngcobo Profile Picture" class="profile-img">
         <h1>Siyabonga Ngcobo</h1>
         <p>Data Engineer | Software Developer | Aspiring Innovator</p>
-        <button id="theme-toggle">Toggle Theme</button>
+        <button id="theme-toggle" aria-label="Toggle Theme">Toggle Theme</button>
     </header>    
+
 
     <nav>
         <ul>
@@ -24,65 +25,92 @@
         </ul>
     </nav>
 
+    <hr>
+
     <section id="about">
         <h2>About Me</h2>
         <p>I am a Data Engineer and Software Developer passionate about building efficient data pipelines, impactful data visualizations, and software solutions. I have expertise in Python, Java, C++, and more. I strive to combine creativity and technology to solve real-world problems.</p>
     </section>
 
+    <hr>
+
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill">
-                <img src="logos/python.png" alt="Python Logo">
+                <img src="logos/python.WebP" alt="Python Logo">
                 <p>Python</p>
             </div>
             <div class="skill">
-                <img src="logos/java.png" alt="Java Logo">
+                <img src="logos/java.WebP" alt="Java Logo">
                 <p>Java</p>
             </div>
             <div class="skill">
-                <img src="logos/cpp.png" alt="C++ Logo">
+                <img src="logos/cpp.WebP" alt="C++ Logo">
                 <p>C++</p>
             </div>
             <div class="skill">
-                <img src="logos/javascript.png" alt="JavaScript Logo">
+                <img src="logos/javascript.WebP" alt="JavaScript Logo">
                 <p>JavaScript</p>
             </div>
             <div class="skill">
-                <img src="logos/html.png" alt="HTML Logo">
+                <img src="logos/html.WebP" alt="HTML Logo">
                 <p>HTML</p>
             </div>
             <div class="skill">
-                <img src="logos/css.png" alt="CSS Logo">
+                <img src="logos/css.WebP" alt="CSS Logo">
                 <p>CSS</p>
             </div>
             <div class="skill">
-                <img src="logos/docker.png" alt="Docker Logo">
+                <img src="logos/docker.WebP" alt="Docker Logo">
                 <p>Docker</p>
             </div>
             <div class="skill">
-                <img src="logos/git.png" alt="Git Logo">
+                <img src="logos/git.WebP" alt="Git Logo">
                 <p>Git</p>
             </div>
             <div class="skill">
-                <img src="logos/sql.png" alt="SQL Logo">
-                <p>SQL</p>
+                <img src="logos/sql.WebP" alt="SQL Logo">
+                <p>MySQL</p>
             </div>
             <div class="skill">
-                <img src="logos/postgresql.png" alt="PostgreSQL Logo">
+                <img src="logos/postgresql.WebP" alt="PostgreSQL Logo">
                 <p>PostgreSQL</p>
             </div>
         </div>
     </section>
 
+    <hr>
+
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Mashebhebs">GitHub Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/siyabonga-ngcobo-90a518257/">LinkedIn Profile</a></li>
-            <li><a href="https://github.com/Mashebhebs/siyabonga-ngcobo.github.io/raw/main/Siyabonga_Ngcobo_CV.docx.pdf" target="_blank" download="Siyabonga_Ngcobo_CV">Download CV</a></li>
-        </ul>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Equations Solver</h3>
+                <p>A Python project focused on mathematical computations and solving equations. This project demonstrates my proficiency in Python and mathematical problem-solving skills.</p>
+                <a href= "https://github.com/Mashebhebs/equations" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>An interactive portfolio website created using HTML, CSS, and JavaScript to showcase my skills, projects, and professional background.</p>
+                <a href="https://github.com/Mashebhebs/siyabonga-ngcobo.github.io" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>Code Breaker CLI</h3>
+                <p>A command-line interface tool developed in C++ for breaking codes or solving puzzles. This project highlights my expertise in C++ and interest in creating utility tools.</p>
+                <a href="https://github.com/Mashebhebs/code-breaker-cli" target="_blank">View Project</a>
+            </div>
+        </div>
     </section>
+    
+    
+
+    <hr>
 
     <section id="contact">
         <h2>Contact Me</h2>
@@ -97,9 +125,12 @@
             <textarea id="message" name="message" rows="5" required></textarea>
     
             <button type="submit">Send</button>
+            
         </form>
+        <div id="form-feedback" style="display: none;"></div>
     </section>
     
+    <hr>
 
     <footer>
         <p>&copy; 2024 Siyabonga Ngcobo</p>
