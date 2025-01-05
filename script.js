@@ -1,3 +1,25 @@
+// Theme Toggle
+const themeToggleButton = document.getElementById('theme-toggle');
+themeToggleButton.addEventListener('click', function () {
+    document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+        themeToggleButton.textContent = 'Light Theme';
+    } else {
+        themeToggleButton.textContent = 'Dark Theme';
+    }
+});
+
+// Smooth Scroll for Navigation Links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (event) {
+        event.preventDefault();
+        const targetSection = document.querySelector(this.getAttribute('href'));
+        targetSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 document.getElementById('contact-form').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
