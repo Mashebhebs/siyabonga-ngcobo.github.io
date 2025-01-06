@@ -67,6 +67,11 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a[href$=".pdf"] {
+    color: #ff5722; 
+    font-weight: bold;
+}
+
 /* Projects Section */
 
 .projects-container {
