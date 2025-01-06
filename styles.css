@@ -364,6 +364,12 @@ body.dark nav ul li a {
     color: #80cbc4;
 }
 
+body.dark nav ul li a[href$=".pdf"] {
+    color: #ff5722; 
+    font-weight: bold;
+}
+
+
 body.dark button {
     background-color: #80cbc4;
 }
