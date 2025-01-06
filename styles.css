@@ -144,6 +144,38 @@ section h2 {
     margin-bottom: 15px;
 }
 
+#downloads {
+    display: flex;
+    align-items: center;
+}
+
+#downloads a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #4CAF50;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#downloads a:hover {
+    background-color: #45a049;
+}
+/* Theme Toggle Button */
+#theme-toggle {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: #555;
+}
+
 /* Skills section */
 
 .skills-container {
@@ -367,6 +399,14 @@ body.dark nav ul li a {
 body.dark nav ul li a[href$=".pdf"] {
     color: #ff5722; 
     font-weight: bold;
+}
+
+body.dark nav ul li a[href$=".pdf"]:hover {
+    color: teal;
+}
+
+nav ul li a[href$=".pdf"]:hover {
+    color: teal;
 }
 
 
