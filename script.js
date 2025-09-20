@@ -20,6 +20,8 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+// Formspree Contact Form Submission
+// This part is crucial for your contact form to work.
 document.getElementById('contact-form').addEventListener('submit', async function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
