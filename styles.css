@@ -19,6 +19,9 @@ header {
     text-align: center;
     padding: 4rem 1rem 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-img {
@@ -90,7 +93,13 @@ nav a:hover {
     color: #66b2b2;
 }
 
-/* Section Containers and Layout */
+/* Main Content and Section Containers */
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -104,9 +113,7 @@ body.dark hr {
 }
 
 .section-container {
-    padding: 2rem 5%;
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 2rem 0;
 }
 
 h2 {
@@ -135,14 +142,14 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* Experience and Skills Layout (Using Grid) */
-.experience-grid, .skills-grid, .projects-grid {
+/* Experience, Skills, and Projects Layout (Using Grid) */
+.experience-grid, .projects-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.job-card, .skill-category, .project-card {
+.job-card, .project-card {
     background: #fff;
     padding: 1.5rem;
     border-radius: 8px;
@@ -150,7 +157,7 @@ h2 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-body.dark .job-card, body.dark .skill-category, body.dark .project-card {
+body.dark .job-card, body.dark .project-card {
     background-color: #1e1e1e;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -165,9 +172,74 @@ body.dark .job-card, body.dark .skill-category, body.dark .project-card {
     color: #66b2b2;
 }
 
-.job-card ul, .skill-category p {
+/* Skills Section - New Styles for Logos and Soft Skills*/
+.skills-category {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-category h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #66b2b2;
+}
+
+.skill-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skill-logos img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark .skill-logos img {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.skill-logos img:hover {
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Awards & Soft Skills Lists - New Styling for a "neat" look */
+.awards-list, .soft-skills-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.awards-list li, .soft-skills-list li {
+    background: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+body.dark .awards-list li, body.dark .soft-skills-list li {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.awards-list li:hover, .soft-skills-list li:hover {
+    background-color: #66b2b2;
+    color: white;
+    transform: translateY(-3px);
 }
 
 /* Contact Section */
